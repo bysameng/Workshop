@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
 		Debug.Log("HELLO I EXIST NOTICE ME");
 	}
 	
+	
 	// Update is called once per frame
 	void Update () {
 		//declare force
@@ -49,7 +50,10 @@ public class PlayerController : MonoBehaviour {
 
 		//now let's modulate force by the framerate so it's independent of it
 		force = force * Time.deltaTime;
+		
 		//now let's apply our force!!
 		rigidbody.AddForce(force);
 	}
+	
+	
 }
