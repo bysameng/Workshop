@@ -32,9 +32,9 @@ public class HoopController : MonoBehaviour {
 				foreach(GameObject g in hoopParts){
 					g.rigidbody.isKinematic = false;
 					g.rigidbody.AddExplosionForce(100f, other.transform.position, 4f);
-					//start our coroutine to put our hoop back together
-					StartCoroutine(Rearrange());
 				}
+				//start our coroutine to put our hoop back together
+				StartCoroutine(Rearrange());
 			}
 		}
 	}
