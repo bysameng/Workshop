@@ -16,9 +16,8 @@ public class HoopController : MonoBehaviour {
 			positions[i] = hoopParts[i].transform.position;
 			rotations[i] = hoopParts[i].transform.rotation;
 		}
-	
-	
 	}
+
 
 	//this is called when a trigger collider has a rigidbody enter it
 	void OnTriggerEnter(Collider other){
@@ -50,7 +49,7 @@ public class HoopController : MonoBehaviour {
 			hoopParts[i].transform.rotation = rotations[i];
 			hoopParts[i].rigidbody.isKinematic = true;
 		}
-
-
 	}
+	
+	
 }
